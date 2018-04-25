@@ -11,7 +11,6 @@ import (
 //go:generate counterfeiter . CheckAPIClient
 
 type CheckAPIClient interface {
-	GetGroupHistory(group string, params slack.HistoryParameters) (*slack.History, error)
 	GetFiles(params slack.GetFilesParameters) ([]slack.File, *slack.Paging, error)
 }
 
